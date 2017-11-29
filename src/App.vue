@@ -9,7 +9,7 @@
     </div>
 
     <div v-if='playing === true'>
-      <div>
+      <div class='image-border'>
         <img v-if='incorrectGuesses === 0' src="./assets/image0.jpg">
         <img v-if='incorrectGuesses === 1' src="./assets/image1.jpg">
         <img v-if='incorrectGuesses === 2' src="./assets/image2.jpg">
@@ -223,15 +223,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   @import url('https://fonts.googleapis.com/css?family=Merriweather');
-
-  body {
-    background: #000;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Merriweather', serif;
-  }
 
   ul {
     list-style: none;
@@ -246,6 +239,8 @@ export default {
   }
 
   #app {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
     width: 400px;
     margin: 0 auto;
   }
@@ -257,6 +252,7 @@ export default {
     color: #000;
     width: 380px;
     font-size: 20px;
+    border: 1px solid #ddd;
     font-family: 'Merriweather', serif;
   }
 
@@ -272,5 +268,9 @@ export default {
 
   .letters {
     font-size: 18px;
+  }
+
+  .image-border {
+    border: 1px solid #ddd;
   }
 </style>
