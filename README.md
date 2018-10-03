@@ -1,5 +1,7 @@
 # hangman
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gerbilsinspace/hangman.svg)](https://greenkeeper.io/)
+
 > A Vue.js project
 
 ## Build Setup
